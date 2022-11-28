@@ -1,5 +1,5 @@
 window.addEventListener('load', cargado);
-var db = openDatabase("bdSisInt", "1.0", "Base de Datos ejemplo", 2 * 1024 * 1024);
+var db = openDatabase("bdSisIntegrado.db", "1.0", "Base de Datos ejemplo", 2 * 1024 * 1024);
 
 db.transaction(function (tx) {
     tx.executeSql('CREATE TABLE IF NOT EXISTS UsuarioSis (nomUsu, contUsu)');
